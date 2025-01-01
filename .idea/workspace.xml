@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67994145-c399-4be9-b7e8-e0789a24d0e2" name="Changes" comment="tambah baru">
+    <list default="true" id="67994145-c399-4be9-b7e8-e0789a24d0e2" name="Changes" comment="tambah fungsi additem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple checkout app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple checkout app/main.py" afterDir="false" />
     </list>
@@ -35,6 +35,9 @@
     &quot;accountId&quot;: &quot;f111272a-e4c0-40b7-b84e-af9d5fe8703a&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -48,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -94,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735572786346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tambah fungsi additem">
+      <option name="closed" value="true" />
+      <created>1735607800133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735607800133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tambah baru" />
-    <option name="LAST_COMMIT_MESSAGE" value="tambah baru" />
+    <MESSAGE value="tambah fungsi additem" />
+    <option name="LAST_COMMIT_MESSAGE" value="tambah fungsi additem" />
   </component>
 </project>
