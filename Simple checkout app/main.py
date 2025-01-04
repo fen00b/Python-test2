@@ -21,6 +21,7 @@ def update_qty():
     quantity = int(input("Masukan jumlah barang :"))
     inventory[item_name]["quantity"]=quantity
     print(f"Jumlah {item_name} diubah menjadi {quantity}")
+    save_inventory()
 
 
 def display_inventory():
@@ -34,11 +35,19 @@ def display_inventory():
     total_value = 0
 
     for item, details in inventory.items():
+        status = "" #inizialize loop
         item_value = details["quantity"] * details["price"]
         total_value += item_value
-        print(f"{item:<20}{details['quantity']:<15}{details['price']:<15}{item_value:<15}")
+        if details['quantity'] <=5:
+            status = f"Stok {item} tersisa {details['quantity']}"
+        print(f"{item:<20}{details['quantity']:<15}{details['price']:<15}{item_value:<15}{status:<10}")
+
     print("-" * 65)
-    print(f"Jumlah nilai inventaris: {total_value:.2f}\n")
+    print(f"Jumlah nilai inventaris: Rp. {total_value:.2f}\n")
+
+def stock_alert():
+    for item in inventory:
+        pass
 
 
 def search_item():
