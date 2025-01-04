@@ -37,21 +37,32 @@ def display_inventory():
         item_value = details["quantity"] * details["price"]
         total_value += item_value
         print(f"{item:<20}{details['quantity']:<15}{details['price']:<15}{item_value:<15}")
-    print("-" * 50)
+    print("-" * 65)
     print(f"Jumlah nilai inventaris: {total_value:.2f}\n")
 
 
 def search_item():
-    item_name = input("Masukan nama item: ").strip()
+    item_name = input("Masukan nama Barang: ").strip()
     if item_name not in inventory:
-        print("item not found!")
+        print("Barang Tidak Ditemukan!")
         return
     details = inventory[item_name]
     print(f"Nama Barang: {item_name}")
     print(f"Jumlah: {details['quantity']}")
     print(f"Harga: {details['price']}")
 
-
+def apply_disc():
+    item_name = input("Masukan Nama barang: ").strip()
+    if item_name not in inventory:
+        print(f"{item_name} Tidak Ditemukan!")
+        return
+    discount = int(input("Masukan diskon"))
+    if not (0 <= discount <=100):
+        print("input yang dimasukan salah, masuka diskon antara 0-100%")
+        return
+    price_ori = inventory[item_name]['price']
+    price_disc = price_ori*(1-discount/100)
+    print(f"Harga {item_name} setelah diskon adalah {price_disc}")
 
 def remove_item():
     item_name = input("Masukan nama item: ").strip()
@@ -74,13 +85,13 @@ def load_inventory():
         with open("inventory.csv","r") as file:
             reader = csv.DictReader(file)
             for row in reader:
-                inventory[row["item"]]={
-                    "quantity" : int(row["Quantitiy"]),
-                    "price" : int(row["price"])
+                inventory[row["Barang"]]={
+                    "quantity" : int(row["Jumlah"]),
+                    "price" : int(row["Harga"])
                 }
         print("inventaris berhasil di muat")
     except FileNotFoundError:
-        print("File inventaris tidak ditemukan. dimulau dengan inventaris kosong")
+        print("File inventaris tidak ditemukan. dimulai dengan inventaris kosong")
 
 def main():
     load_inventory()
@@ -89,9 +100,10 @@ def main():
         print("2. Perbarui Jumlah Barang")
         print("3. Tampilkan Inventaris")
         print("4. Cari Barang")
-        print("5. Hapus Barang")
-        print("6. Simpan dan Keluar")
-        choice = input("Pilih opsi").strip()
+        print("5. Cek Diskon")
+        print("6. Hapus Barang")
+        print("7. Simpan dan Keluar")
+        choice = input("Pilih opsi: ").strip()
         if choice == "1":
             additem()
         elif choice == "2":
@@ -101,8 +113,10 @@ def main():
         elif choice == "4":
             search_item()
         elif choice == "5":
-            remove_item()
+            apply_disc()
         elif choice == "6":
+            remove_item()
+        elif choice == "7":
             save_inventory()
             break
         else:
