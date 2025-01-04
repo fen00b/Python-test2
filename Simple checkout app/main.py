@@ -1,7 +1,5 @@
 import csv
-from math import trunc
-from statistics import quantiles
-from wsgiref.validate import check_input
+
 
 inventory = {}
 
@@ -65,7 +63,7 @@ def remove_item():
 
 def save_inventory():
     with open("inventory.csv","w") as file:
-        writer = csv.writer(file1)
+        writer = csv.writer(file)
         writer.writerow(["Barang","Jumlah","Harga"])
         for item, details, in inventory.items():
             writer.writerow([item, details["quantity"], details["price"]])
