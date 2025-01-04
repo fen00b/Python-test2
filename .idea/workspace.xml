@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67994145-c399-4be9-b7e8-e0789a24d0e2" name="Changes" comment="tambah fungsi additem">
+    <list default="true" id="67994145-c399-4be9-b7e8-e0789a24d0e2" name="Changes" comment="tambah fungsi inventory (untuk melihat inventory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple checkout app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple checkout app/main.py" afterDir="false" />
     </list>
@@ -55,6 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
@@ -106,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735607800133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tambah fungsi inventory (untuk melihat inventory">
+      <option name="closed" value="true" />
+      <created>1735711973692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735711973692</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tambah baru" />
     <MESSAGE value="tambah fungsi additem" />
-    <option name="LAST_COMMIT_MESSAGE" value="tambah fungsi additem" />
+    <MESSAGE value="tambah fungsi inventory (untuk melihat inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="tambah fungsi inventory (untuk melihat inventory" />
   </component>
 </project>
